@@ -1,0 +1,50 @@
+.content {
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 25px;
+    color: #787c7e;
+}
+
+.link-rule {
+	color: #787c7e;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+	text-decoration: none;
+	cursor: pointer;
+    height: 50px;
+}
+
+.link-rule:hover {
+    color: #ffd900;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+}
+
+.content h2 {
+    font-size: 22px;
+    color: #787c7e;
+}
+
+.mode-link {
+    display: inline-block;
+    color: #787c7e;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.mode-link:hover {
+    color: #6aaa64;
+}
