@@ -4,7 +4,7 @@ import Keyboard from './Keyboard';
 import { wordListNormal } from '../dictionary/WordListNormal';
 
 const GameNormal = () => {
-  const [boardData, setBoardData] = useState(JSON.parse(localStorage.getItem("board-data")));
+  const [boardData, setBoardData] = useState(JSON.parse(localStorage.getItem("board-data-2")));
   const [message, setMessage] = useState(null);
   const [error, setError] = useState(false);
   const [charArray, setCharArray] = useState([]);
@@ -16,7 +16,7 @@ const GameNormal = () => {
                           "rowIndex": 0, "boardWords":[], "boardRowStatus":[], "presentCharArray":[],
                           "absentCharArray":[], "correctCharArray":[], "status":"IN_PROGRESS"};
     setBoardData(newBoardData);
-    localStorage.setItem('board-data', JSON.stringify(newBoardData));
+    localStorage.setItem('board-data-2', JSON.stringify(newBoardData));
   }
 
   const handleMessage = (message) => {
@@ -78,7 +78,7 @@ const GameNormal = () => {
               "correctCharArray": correctCharArray,
             "absentCharArray": absentCharArray};
     setBoardData(newBoardData);
-    localStorage.setItem("board-data", JSON.stringify(newBoardData));
+    localStorage.setItem("board-data-2", JSON.stringify(newBoardData));
   }
 
   const enterCurrentText=(word) => {
@@ -124,17 +124,15 @@ const GameNormal = () => {
                           "rowIndex": 0, "boardWords":[], "boardRowStatus":[], "presentCharArray":[],
                           "absentCharArray":[], "correctCharArray":[], "status":"IN_PROGRESS"}
       setBoardData(newBoardData);
-      localStorage.setItem('board-data', JSON.stringify(newBoardData));
+      localStorage.setItem('board-data-2', JSON.stringify(newBoardData));
     }
   }, []);
   return (
     <div className='container'>
-      {/* <div className='top'>
-        <div className='title'> WORDLE</div>
+      <div className='top'>
         <button className='reset-board' onClick={resetBoard}>{"\u27f3"}</button>
-      </div> */}
+      </div>
       {message && <div className='message'>{message}</div>}
-      <button className='reset-board' onClick={resetBoard}>{"\u27f3"}</button>
       <div className='cube'>
         {[0, 1, 2, 3, 4, 5].map((row, rowIndex) =>(
           <div className={`cube-row ${boardData && row===boardData.rowIndex && error && "error"}`} key={rowIndex}> {

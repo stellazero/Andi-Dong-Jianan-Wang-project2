@@ -3,9 +3,8 @@
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 80vh; */
   align-items: center;
-  margin-top: 20px;
+  height: 90vh;
 }
 .message{
   position: absolute;
@@ -17,10 +16,10 @@
   font-size: 16px;
 }
 
-.title{
-  letter-spacing: 0.2rem;
-  font-size: 36px;
-  font-weight: 600;
+.top{
+  display: flex;
+  flex-direction: row;
+  padding:10px 20px;
 }
 
 .cube-row{
@@ -40,22 +39,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   width: 50px;
   height: 50px;
   border: 2px solid #d3d6da;
 }
 
-.bottom {
+/* .bottom {
   margin-top: 20px;
-}
+} */
 
 .reset-board{
-  /* padding: 5px 5px 5px 20px; */
+  padding: 2px 5px 5px 5px;
   background: none;
   color: #6aaa64;
-  font-size: 38px;
+  font-size: 40px;
 }
 
 .cube-row.error {

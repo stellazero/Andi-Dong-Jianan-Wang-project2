@@ -4,7 +4,7 @@ import Keyboard from './Keyboard';
 import { wordListEasy } from '../dictionary/WordListEasy';
 
 const GameEasy = () => {
-  const [boardData, setBoardData] = useState(JSON.parse(localStorage.getItem("board-data")));
+  const [boardData, setBoardData] = useState(JSON.parse(localStorage.getItem("board-data-1")));
   const [message, setMessage] = useState(null);
   const [error, setError] = useState(false);
   const [charArray, setCharArray] = useState([]);
@@ -16,7 +16,7 @@ const GameEasy = () => {
                           "rowIndex": 0, "boardWords":[], "boardRowStatus":[], "presentCharArray":[],
                           "absentCharArray":[], "correctCharArray":[], "status":"IN_PROGRESS"};
     setBoardData(newBoardData);
-    localStorage.setItem('board-data', JSON.stringify(newBoardData));
+    localStorage.setItem('board-data-1', JSON.stringify(newBoardData));
   }
 
   const handleMessage = (message) => {
@@ -78,7 +78,7 @@ const GameEasy = () => {
               "correctCharArray": correctCharArray,
             "absentCharArray": absentCharArray};
     setBoardData(newBoardData);
-    localStorage.setItem("board-data", JSON.stringify(newBoardData));
+    localStorage.setItem("board-data-1", JSON.stringify(newBoardData));
   }
 
   const enterCurrentText=(word) => {
@@ -124,15 +124,14 @@ const GameEasy = () => {
                           "rowIndex": 0, "boardWords":[], "boardRowStatus":[], "presentCharArray":[],
                           "absentCharArray":[], "correctCharArray":[], "status":"IN_PROGRESS"}
       setBoardData(newBoardData);
-      localStorage.setItem('board-data', JSON.stringify(newBoardData));
+      localStorage.setItem('board-data-1', JSON.stringify(newBoardData));
     }
   }, []);
   return (
     <div className='container'>
-      {/* <div className='top'>
-        <div className='title'> WORDLE</div>
+      <div className='top'>
         <button className='reset-board' onClick={resetBoard}>{"\u27f3"}</button>
-      </div> */}
+      </div>
       {message && <div className='message'>{message}</div>}
       <div className='cube'>
         {[0, 1, 2, 3, 4, 5, 6].map((row, rowIndex) =>(

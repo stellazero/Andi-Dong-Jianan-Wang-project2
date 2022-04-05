@@ -10,7 +10,7 @@ export default function Homepage() {
         <h1>Welcome to Wordle!</h1>
         <img src={wordle} className="logo"/>
         <Link to="/rule" className="link-rule" >How to play ?</Link>
-        <h2>Start with a difficulty</h2>
+        <h2>Start with a difficulty:</h2>
         <div className="mode">
         <Link to="/GameEasy" className="mode-link" >Easy</Link>
         <Link to="/GameNormal" className="mode-link" >Normal</Link>
