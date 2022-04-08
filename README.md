@@ -21,4 +21,4 @@ In the project directory, you can run:
 
 ## How long did this assignment take to complete?
 
-It takes us more than a week working on this project.
+It takes us nearly two weeks working on this project.
