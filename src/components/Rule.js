@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Rule.css";
+import rule from "../img/rule.png";
 
 export default function Rule() {
   return (
@@ -14,6 +15,7 @@ export default function Rule() {
                 <p>A correct letter in the wrong place turn <span className='yellow'><strong>YELLOW</strong></span>.</p>
                 <p>An incorrect letter turns <span className='gray'><strong>GRAY</strong></span>.</p>
                 <p>Letters can be used more than once.</p>
+                <img src={rule} className='ruleExample'/>
             </div>
         </div>
     </div>
