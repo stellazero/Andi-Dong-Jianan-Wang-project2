@@ -16,8 +16,10 @@ We do have a few challenges, for example:
 We found that on most of the wordle games, For example, if the correct words has one "a", and player types two "a", both "a" would be marked, and it really confused us how many "a" should the correct words has, so if we have more time, we will make the rule clearer, if the correct words only have one "a", we shall only mark one as well.
 
 ## What assumptions did you make while working on this assignment?
-
-In the project directory, you can run:
+1. We assumed that the players of this game know a fair amount of vocabulary.
+2. We assumed that the players of this game are able to distinguish the colors of green, yellow and gray.
+3. We assumed that this game is friendly for the players who haven't played this game before.
+4. We assumed that the players are able to catch up what they have left if they did not finish the game.
 
 ## How long did this assignment take to complete?
 
